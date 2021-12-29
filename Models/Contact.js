@@ -11,6 +11,9 @@ const contactSchema=new schema({
         type:String,
         required:true
     },
-    age:Number
+    age:{
+        type:Number,
+        required:true
+    }
 })
 module.exports=mongoose.model('Contact',contactSchema)

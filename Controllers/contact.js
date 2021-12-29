@@ -53,6 +53,6 @@ exports.getOneContact=async(req,res)=>{
         const contact= await Contact.findOne({_id:contactId})
         res.send(contact)
     } catch (error) {
-        res.send('server error')
+        res.send(error.message)
     }
 }
